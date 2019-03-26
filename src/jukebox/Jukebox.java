@@ -1,5 +1,6 @@
+package jukebox;
 /*
- *    Copyright (c) The League of Amazing Programmers 2013-2018
+ *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
  */
 
@@ -16,30 +17,28 @@ import javax.swing.SwingUtilities;
 
 import javazoom.jl.player.advanced.AdvancedPlayer;
 
-/* 1. Download the JavaZoom jar from here: http://bit.ly/javazoom
- * 2. Right click your project and add it as an External JAR (Under Java Build Path > Libraries).*/
+/*   If you don't have javazoom.jar in your project, you can download it from here: http://bit.ly/javazoom
+ *   Right click your project and add it as a JAR (Under Java Build Path > Libraries).*/
 
 public class Jukebox implements Runnable {
 
-	public static void main(String[] args) {
-		SwingUtilities.invokeLater(new Jukebox());
-	}
+    public void run() {
 
-           public void run() {
+		// 1. Find an mp3 on your computer or on the Internet.
+		// 2. Create a Song object for that mp3
 
-		// 3. Find an mp3 on your computer or on the Internet.
-		// 4. Create a Song
-
-		// 5. Play the Song
+		// 3. Play the Song
 
 		/*
-		 * 6. Create a user interface for your Jukebox so that the user can to
+		 * 4. Create a user interface for your Jukebox so that the user can to
 		 * choose which song to play. You can use can use a different button for
 		 * each song, or a picture of the album cover. When the button or album
 		 * cover is clicked, stop the currently playing song, and play the one
 		 * that was selected.
 		 */
-          }
+    }
+    
+    
 	/* Use this method to add album covers to your Panel. */
 	private JLabel loadImage(String fileName) {
 		URL imageURL = getClass().getResource(fileName);

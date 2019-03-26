@@ -1,3 +1,4 @@
+package cow_timer;
 /*
  *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
@@ -8,27 +9,22 @@ import java.io.IOException;
 import javax.swing.JApplet;
 
 public class CowTimer {
-	/*
-	 * This is an advanced recipe. There may be more than one line of code for each
-	 * instruction. Work in seconds when testing, then change to minutes
-	 */
 
-	public static void main(String[] args) throws InterruptedException {
-		/* 1. Make a CowTimer, set the time and start it. */
-
-	}
+	/* 1. Make a constructor for the CowTimer class that initializes the minutes variable */
+	
+	/* 4. Complete the main method of the CowTimerRunner class */
 
 	private int minutes;
 
 	public void setTime(int minutes) {
 		this.minutes = minutes;
-		System.out.println("Cow set to " + minutes + " minutes.");
+		System.out.println("Cow time set to " + minutes + " minutes.");
 	}
 
 	public void start() throws InterruptedException {
 		/*
-		 * 2. Count down the minutes, print the current minute then sleep for 60 seconds
-		 * using Thread.sleep(int milliseconds).
+		 * 2. Count down the minutes, print the current minute then sleep for the number of minutes
+		 * using Thread.sleep(int milliseconds). 
 		 */
 
 		/*

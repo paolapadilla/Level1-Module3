@@ -1,5 +1,6 @@
+package magic_box;
 /*
- *    Copyright (c) The League of Amazing Programmers 2013-2018
+ *    Copyright (c) The League of Amazing Programmers 2013-2019
  *    Level 1
  */
 
@@ -25,19 +26,16 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 	 * 
 	 * 1. Make the frame respond to mouse clicks.
 	 * 
-	 * 2. When the mouse is clicked, use the Media Palace (read the code in the default package) to play sounds, show images or speak.
+	 * 2. When the mouse is clicked, use the Media Palace (read the code in the magic_box package) to play sounds, 
+	 *    show images or speak.
 	 * 
-	 * 3. backgroundImage.getRGB(keyEvent.getX(), keyEvent.getY()) will give you the color of the current pixel.
+	 * 3. Choose 3 different locations on the background image.You can either use the mouse position, 
+	 *    or the color of the image, then decide what action the Media Palace should take in each case. 
+	 *     backgroundImage.getRGB(e.getX(), e.getY()) will give you the color of the current pixel.
 	 */
 
 	BufferedImage backgroundImage;
 
-	public static void main(String[] args) throws Exception {
-		SwingUtilities.invokeLater(new MagicBox());
-	
-		
-		
-	}
 
 	@Override
 	public void run() {
@@ -59,7 +57,7 @@ public class MagicBox extends JPanel implements Runnable, MouseListener {
 	}
 
 	private void loadBackgroundImage() throws Exception {
-		String imageFile = "src/magic-box.jpg";
+		String imageFile = "src/magic_box/magic-box.jpg";
 		try {
 			backgroundImage = ImageIO.read(new File(imageFile));
 		} catch (IOException e) {
